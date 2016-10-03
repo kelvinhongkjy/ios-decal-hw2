@@ -22,6 +22,9 @@
 		24D85B0B1D951F2400AE8CD8 /* AdvancedCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D85B0A1D951F2400AE8CD8 /* AdvancedCalcUITests.swift */; };
 		24D85B0D1D951F4400AE8CD8 /* GeneralCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D85B0C1D951F4400AE8CD8 /* GeneralCalcUITests.swift */; };
 		24D85B0F1D951FDA00AE8CD8 /* IntermediateCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D85B0E1D951FDA00AE8CD8 /* IntermediateCalcUITests.swift */; };
+		B697E6431D9B777E004F436A /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B697E6421D9B777E004F436A /* StateMachine.swift */; };
+		B697E6451D9BA2B3004F436A /* StateMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B697E6441D9BA2B3004F436A /* StateMachineTests.swift */; };
+		B697E6461D9BA535004F436A /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B697E6421D9B777E004F436A /* StateMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,8 @@
 		24D85B0A1D951F2400AE8CD8 /* AdvancedCalcUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedCalcUITests.swift; sourceTree = "<group>"; };
 		24D85B0C1D951F4400AE8CD8 /* GeneralCalcUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralCalcUITests.swift; sourceTree = "<group>"; };
 		24D85B0E1D951FDA00AE8CD8 /* IntermediateCalcUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateCalcUITests.swift; sourceTree = "<group>"; };
+		B697E6421D9B777E004F436A /* StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
+		B697E6441D9BA2B3004F436A /* StateMachineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StateMachineTests.swift; path = SwiftCalcTests/StateMachineTests.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				242B97201D927F8400C640FA /* CustomButton.swift */,
+				B697E6421D9B777E004F436A /* StateMachine.swift */,
+				B697E6441D9BA2B3004F436A /* StateMachineTests.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -322,6 +329,7 @@
 				242B96FE1D925BDD00C640FA /* ViewController.swift in Sources */,
 				242B96FC1D925BDD00C640FA /* AppDelegate.swift in Sources */,
 				242B97211D927F8400C640FA /* CustomButton.swift in Sources */,
+				B697E6431D9B777E004F436A /* StateMachine.swift in Sources */,
 				24C636751D93A3E4004D5B73 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +339,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				242B97111D925BDD00C640FA /* SwiftCalcTests.swift in Sources */,
+				B697E6461D9BA535004F436A /* StateMachine.swift in Sources */,
+				B697E6451D9BA2B3004F436A /* StateMachineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +596,7 @@
 				24D85B041D95095800AE8CD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

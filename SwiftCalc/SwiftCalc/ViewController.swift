@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     //       One data structure is initialized below for reference.
     var someDataStructure: [String] = [""]
     
+    let model: StateContext = StateContext()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +53,7 @@ class ViewController: UIViewController {
     // TODO: Ensure that resultLabel gets updated.
     //       Modify this one or create your own.
     func updateResultLabel(_ content: String) {
-        print("Update me like one of those PCs")
+        resultLabel.text = content
     }
     
     
@@ -81,16 +82,23 @@ class ViewController: UIViewController {
         guard Int(sender.content) != nil else { return }
         print("The number \(sender.content) was pressed")
         // Fill me in!
+        
+        model.input(sender.content)
+        updateResultLabel(model.display()!)
     }
     
     // REQUIRED: The responder to an operator button being pressed.
     func operatorPressed(_ sender: CustomButton) {
         // Fill me in!
+        print("The number \(sender.content) was pressed")
+        model.input(sender.content)
+        updateResultLabel(model.display()!)
     }
     
     // REQUIRED: The responder to a number or operator button being pressed.
     func buttonPressed(_ sender: CustomButton) {
-       // Fill me in!
+        model.input(sender.content)
+        updateResultLabel(model.display()!)
     }
     
     // IMPORTANT: Do NOT change any of the code below.
