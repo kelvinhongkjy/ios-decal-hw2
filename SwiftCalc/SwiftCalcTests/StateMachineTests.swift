@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import SwiftCalc
 
 class StateMachineTests: XCTestCase {
     
@@ -89,11 +90,15 @@ class StateMachineTests: XCTestCase {
         assertDisplay(expected: "0")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+//    func testOpAssociativity() {
+//        sm.input("3")
+//        sm.input("+")
+//        sm.input("7")
+//        sm.input("*")
+//        assertDisplay(expected: "7")
+//        sm.input("2")
+//        sm.input("=")
+//        assertDisplay(expected: "17")
+//    }
     
 }

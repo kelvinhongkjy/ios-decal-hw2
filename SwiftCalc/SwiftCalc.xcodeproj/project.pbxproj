@@ -22,9 +22,8 @@
 		24D85B0B1D951F2400AE8CD8 /* AdvancedCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D85B0A1D951F2400AE8CD8 /* AdvancedCalcUITests.swift */; };
 		24D85B0D1D951F4400AE8CD8 /* GeneralCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D85B0C1D951F4400AE8CD8 /* GeneralCalcUITests.swift */; };
 		24D85B0F1D951FDA00AE8CD8 /* IntermediateCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D85B0E1D951FDA00AE8CD8 /* IntermediateCalcUITests.swift */; };
+		B68A2A161DA4DDBA005ADD83 /* StateMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B697E6441D9BA2B3004F436A /* StateMachineTests.swift */; };
 		B697E6431D9B777E004F436A /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B697E6421D9B777E004F436A /* StateMachine.swift */; };
-		B697E6451D9BA2B3004F436A /* StateMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B697E6441D9BA2B3004F436A /* StateMachineTests.swift */; };
-		B697E6461D9BA535004F436A /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B697E6421D9B777E004F436A /* StateMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -339,8 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				242B97111D925BDD00C640FA /* SwiftCalcTests.swift in Sources */,
-				B697E6461D9BA535004F436A /* StateMachine.swift in Sources */,
-				B697E6451D9BA2B3004F436A /* StateMachineTests.swift in Sources */,
+				B68A2A161DA4DDBA005ADD83 /* StateMachineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -83,9 +83,7 @@ class State {
         self.context.pendingOp = event.input
     }
     func handle(_ event: NumberEvent) {
-        if tempOperand.characters.count < 7 {
-            tempOperand = event.process(oldNum: tempOperand)
-        }
+        tempOperand = event.process(oldNum: tempOperand)
     }
     func handle(_ event: EqualEvent) {}
     func display() -> String? {
@@ -164,6 +162,9 @@ class OperatorEvent: Event {
 
 class NumberEvent: Event {
     func process(oldNum: String) -> String {
+        if oldNum.characters.count >= 7 {
+            return oldNum
+        }
         if oldNum == "0" {
             return self.input
         } else {
@@ -180,7 +181,7 @@ class ClearEvent: NumberEvent {
 
 class PointEvent: NumberEvent {
     override func process(oldNum: String) -> String {
-        if oldNum.contains(".") {
+        if oldNum.contains(".") || oldNum.characters.count >= 7 {
             return oldNum
         } else {
             return oldNum + "."
@@ -190,7 +191,10 @@ class PointEvent: NumberEvent {
 
 class FlipSignEvent: NumberEvent {
     override func process(oldNum: String) -> String {
-        if oldNum[oldNum.startIndex] == "-"{
+        if oldNum.characters.count >= 7 {
+            return oldNum
+        }
+        if oldNum[oldNum.startIndex] == "-" {
             return oldNum.substring(from: oldNum.index(oldNum.startIndex, offsetBy: 1))
         } else {
             return "-" + oldNum
